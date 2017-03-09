@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmployeeInformationHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleBusinessHeadshot" translatesAutoresizingMaskIntoConstraints="NO" id="HCa-qr-gW4">
+                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="7Xl-Wl-M4v"/>
+                        <constraint firstAttribute="height" constant="70" id="hTw-A9-aax"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bV-4R-IpV">
+                    <rect key="frame" x="87" y="10" width="41" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="M98-XJ-DyX"/>
+                        <constraint firstAttribute="height" constant="21" id="gKB-QL-Vq6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-XG-CV7">
+                    <rect key="frame" x="87" y="35" width="279" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="TjT-7G-97N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've got 1 event today." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrl-n9-WnV">
+                    <rect key="frame" x="87" y="59" width="279" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="pJE-QB-rPF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4bV-4R-IpV" firstAttribute="leading" secondItem="HCa-qr-gW4" secondAttribute="trailing" constant="7" id="0Df-HQ-fAR"/>
+                <constraint firstItem="Vej-XG-CV7" firstAttribute="top" secondItem="4bV-4R-IpV" secondAttribute="bottom" constant="4" id="Uhl-9z-4T7"/>
+                <constraint firstItem="4bV-4R-IpV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="YUk-UY-nhy"/>
+                <constraint firstItem="HCa-qr-gW4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cdu-wQ-bMa"/>
+                <constraint firstItem="HCa-qr-gW4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="hxX-Ym-GRH"/>
+                <constraint firstItem="Vej-XG-CV7" firstAttribute="leading" secondItem="HCa-qr-gW4" secondAttribute="trailing" constant="7" id="sZO-p1-4Qe"/>
+                <constraint firstItem="Yrl-n9-WnV" firstAttribute="leading" secondItem="HCa-qr-gW4" secondAttribute="trailing" constant="7" id="uMj-NL-L4L"/>
+                <constraint firstItem="Yrl-n9-WnV" firstAttribute="width" secondItem="Vej-XG-CV7" secondAttribute="width" id="w4E-2i-Ts2"/>
+                <constraint firstItem="Yrl-n9-WnV" firstAttribute="top" secondItem="Vej-XG-CV7" secondAttribute="bottom" constant="5" id="x29-1V-TKX"/>
+                <constraint firstAttribute="trailing" secondItem="Vej-XG-CV7" secondAttribute="trailing" constant="9" id="yay-r7-U3w"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-235.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SampleBusinessHeadshot" width="675" height="540"/>
+    </resources>
+</document>

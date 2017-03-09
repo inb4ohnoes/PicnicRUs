@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="customerButton" destination="G7G-Qe-Zwd" id="Q07-cc-7VZ"/>
+                <outlet property="employeeButton" destination="AlB-4B-PWd" id="8Zm-Xg-Wh6"/>
+                <outlet property="view" destination="MN3-ps-soF" id="xba-W7-FwH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MN3-ps-soF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeroImage" translatesAutoresizingMaskIntoConstraints="NO" id="fUq-Ku-00e">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlB-4B-PWd">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.76891118290000005" green="0.83848637339999998" blue="0.94149720670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="75T-uv-7zA"/>
+                    </constraints>
+                    <state key="normal" title="Employee Login"/>
+                    <connections>
+                        <action selector="employeeButtonPressed:" destination="-1" eventType="touchUpInside" id="jV3-jw-3vT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-Qe-Zwd">
+                    <rect key="frame" x="0.0" y="587" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.62352941179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XHI-9P-fER"/>
+                    </constraints>
+                    <state key="normal" title="Customer Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="customerButtonPressed:" destination="-1" eventType="touchUpInside" id="g3c-IH-Vvu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fUq-Ku-00e" secondAttribute="bottom" id="GAq-eX-I9I"/>
+                <constraint firstItem="G7G-Qe-Zwd" firstAttribute="leading" secondItem="MN3-ps-soF" secondAttribute="leading" id="P1s-mX-ie8"/>
+                <constraint firstItem="fUq-Ku-00e" firstAttribute="leading" secondItem="MN3-ps-soF" secondAttribute="leading" id="QP4-6A-xwq"/>
+                <constraint firstItem="fUq-Ku-00e" firstAttribute="top" secondItem="MN3-ps-soF" secondAttribute="top" id="TPG-kp-LY3"/>
+                <constraint firstAttribute="trailing" secondItem="AlB-4B-PWd" secondAttribute="trailing" id="VOW-9h-RLn"/>
+                <constraint firstAttribute="trailing" secondItem="fUq-Ku-00e" secondAttribute="trailing" id="XXT-A7-OS8"/>
+                <constraint firstAttribute="trailing" secondItem="G7G-Qe-Zwd" secondAttribute="trailing" id="dsh-2F-BdA"/>
+                <constraint firstItem="AlB-4B-PWd" firstAttribute="leading" secondItem="MN3-ps-soF" secondAttribute="leading" id="fmC-NN-hvL"/>
+                <constraint firstAttribute="bottom" secondItem="AlB-4B-PWd" secondAttribute="bottom" id="fzV-4g-ue0"/>
+                <constraint firstItem="AlB-4B-PWd" firstAttribute="top" secondItem="G7G-Qe-Zwd" secondAttribute="bottom" id="g51-Da-1mc"/>
+            </constraints>
+            <point key="canvasLocation" x="67.5" y="761.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeroImage" width="623" height="502"/>
+    </resources>
+</document>

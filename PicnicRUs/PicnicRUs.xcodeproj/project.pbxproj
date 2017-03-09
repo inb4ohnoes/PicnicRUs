@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECFC97671E710B1100BB75CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97661E710B1100BB75CE /* main.m */; };
+		ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97691E710B1100BB75CE /* AppDelegate.m */; };
+		ECFC976D1E710B1100BB75CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC976C1E710B1100BB75CE /* HomeViewController.m */; };
+		ECFC97721E710B1100BB75CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFC97711E710B1100BB75CE /* Assets.xcassets */; };
+		ECFC977E1E7111EF00BB75CE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFC977D1E7111EF00BB75CE /* HomeViewController.xib */; };
+		ECFC978B1E71258200BB75CE /* CustomerOrderRequestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC978A1E71258200BB75CE /* CustomerOrderRequestTableViewController.m */; };
+		ECFC978F1E712B7000BB75CE /* EmployeeInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC978E1E712B7000BB75CE /* EmployeeInformationTableViewController.m */; };
+		ECFC97921E712E8600BB75CE /* EmployeeInformationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97911E712E8600BB75CE /* EmployeeInformationHeaderView.m */; };
+		ECFC97941E712F1B00BB75CE /* EmployeeInformationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFC97931E712F1B00BB75CE /* EmployeeInformationHeaderView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECFC97621E710B1100BB75CE /* PicnicRUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicnicRUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFC97661E710B1100BB75CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECFC97681E710B1100BB75CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECFC97691E710B1100BB75CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECFC976B1E710B1100BB75CE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		ECFC976C1E710B1100BB75CE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		ECFC97711E710B1100BB75CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFC97761E710B1100BB75CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFC977D1E7111EF00BB75CE /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		ECFC97891E71258200BB75CE /* CustomerOrderRequestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerOrderRequestTableViewController.h; sourceTree = "<group>"; };
+		ECFC978A1E71258200BB75CE /* CustomerOrderRequestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerOrderRequestTableViewController.m; sourceTree = "<group>"; };
+		ECFC978D1E712B7000BB75CE /* EmployeeInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeInformationTableViewController.h; sourceTree = "<group>"; };
+		ECFC978E1E712B7000BB75CE /* EmployeeInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeInformationTableViewController.m; sourceTree = "<group>"; };
+		ECFC97901E712E8600BB75CE /* EmployeeInformationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeInformationHeaderView.h; sourceTree = "<group>"; };
+		ECFC97911E712E8600BB75CE /* EmployeeInformationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeInformationHeaderView.m; sourceTree = "<group>"; };
+		ECFC97931E712F1B00BB75CE /* EmployeeInformationHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeInformationHeaderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECFC975F1E710B1100BB75CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECFC97591E710B1000BB75CE = {
+			isa = PBXGroup;
+			children = (
+				ECFC97641E710B1100BB75CE /* PicnicRUs */,
+				ECFC97631E710B1100BB75CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECFC97631E710B1100BB75CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC97621E710B1100BB75CE /* PicnicRUs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECFC97641E710B1100BB75CE /* PicnicRUs */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC97681E710B1100BB75CE /* AppDelegate.h */,
+				ECFC97691E710B1100BB75CE /* AppDelegate.m */,
+				ECFC977F1E71169A00BB75CE /* Welcome */,
+				ECFC97801E7116A200BB75CE /* Customer */,
+				ECFC978C1E712B5000BB75CE /* Employee */,
+				ECFC97711E710B1100BB75CE /* Assets.xcassets */,
+				ECFC97761E710B1100BB75CE /* Info.plist */,
+				ECFC97651E710B1100BB75CE /* Supporting Files */,
+			);
+			path = PicnicRUs;
+			sourceTree = "<group>";
+		};
+		ECFC97651E710B1100BB75CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC97661E710B1100BB75CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECFC977F1E71169A00BB75CE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC976B1E710B1100BB75CE /* HomeViewController.h */,
+				ECFC976C1E710B1100BB75CE /* HomeViewController.m */,
+				ECFC977D1E7111EF00BB75CE /* HomeViewController.xib */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		ECFC97801E7116A200BB75CE /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC97891E71258200BB75CE /* CustomerOrderRequestTableViewController.h */,
+				ECFC978A1E71258200BB75CE /* CustomerOrderRequestTableViewController.m */,
+			);
+			name = Customer;
+			sourceTree = "<group>";
+		};
+		ECFC978C1E712B5000BB75CE /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				ECFC978D1E712B7000BB75CE /* EmployeeInformationTableViewController.h */,
+				ECFC978E1E712B7000BB75CE /* EmployeeInformationTableViewController.m */,
+				ECFC97901E712E8600BB75CE /* EmployeeInformationHeaderView.h */,
+				ECFC97911E712E8600BB75CE /* EmployeeInformationHeaderView.m */,
+				ECFC97931E712F1B00BB75CE /* EmployeeInformationHeaderView.xib */,
+			);
+			name = Employee;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECFC97611E710B1100BB75CE /* PicnicRUs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFC97791E710B1100BB75CE /* Build configuration list for PBXNativeTarget "PicnicRUs" */;
+			buildPhases = (
+				ECFC975E1E710B1100BB75CE /* Sources */,
+				ECFC975F1E710B1100BB75CE /* Frameworks */,
+				ECFC97601E710B1100BB75CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicnicRUs;
+			productName = PicnicRUs;
+			productReference = ECFC97621E710B1100BB75CE /* PicnicRUs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECFC975A1E710B1000BB75CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Picnic R Us";
+				TargetAttributes = {
+					ECFC97611E710B1100BB75CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J485RK67Z4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECFC975D1E710B1000BB75CE /* Build configuration list for PBXProject "PicnicRUs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECFC97591E710B1000BB75CE;
+			productRefGroup = ECFC97631E710B1100BB75CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECFC97611E710B1100BB75CE /* PicnicRUs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECFC97601E710B1100BB75CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC97721E710B1100BB75CE /* Assets.xcassets in Resources */,
+				ECFC977E1E7111EF00BB75CE /* HomeViewController.xib in Resources */,
+				ECFC97941E712F1B00BB75CE /* EmployeeInformationHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECFC975E1E710B1100BB75CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFC976D1E710B1100BB75CE /* HomeViewController.m in Sources */,
+				ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */,
+				ECFC97921E712E8600BB75CE /* EmployeeInformationHeaderView.m in Sources */,
+				ECFC978B1E71258200BB75CE /* CustomerOrderRequestTableViewController.m in Sources */,
+				ECFC97671E710B1100BB75CE /* main.m in Sources */,
+				ECFC978F1E712B7000BB75CE /* EmployeeInformationTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ECFC97771E710B1100BB75CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECFC97781E710B1100BB75CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECFC977A1E710B1100BB75CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J485RK67Z4;
+				INFOPLIST_FILE = PicnicRUs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = probably.ninja.PicnicRUs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECFC977B1E710B1100BB75CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J485RK67Z4;
+				INFOPLIST_FILE = PicnicRUs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = probably.ninja.PicnicRUs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECFC975D1E710B1000BB75CE /* Build configuration list for PBXProject "PicnicRUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFC97771E710B1100BB75CE /* Debug */,
+				ECFC97781E710B1100BB75CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFC97791E710B1100BB75CE /* Build configuration list for PBXNativeTarget "PicnicRUs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFC977A1E710B1100BB75CE /* Debug */,
+				ECFC977B1E710B1100BB75CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECFC975A1E710B1000BB75CE /* Project object */;
+}
