@@ -7,6 +7,7 @@
 //
 
 #import "CustomerOrderRequestTableViewController.h"
+#import "OrderSuccessViewController.h"
 
 @interface CustomerOrderRequestTableViewController ()
 
@@ -28,7 +29,9 @@
 
 - (void)submit
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    OrderSuccessViewController *controller = [[OrderSuccessViewController alloc] init];
+    [controller setName:@"Jane Doe" andOrderNumber:@"14722"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - Table view data source
@@ -43,7 +46,7 @@
         return 5;//first last street city zip
     } else if (section == 1)
     {
-        return 4;//sample menu
+        return 5;//sample menu
     } else if (section == 2)
     {
         return 4;//name cardno date ccv
@@ -87,16 +90,22 @@
         //Menu choice
         if (indexPath.row == 0)
         {
-            cell.textLabel.text = @"Sample Menu Item 1";
+            cell.textLabel.text = @"Egg Salad Sandwich";
+            cell.imageView.image = [UIImage imageNamed:@"CheckMark"];
         } else if (indexPath.row == 1)
         {
-            cell.textLabel.text = @"Sample Menu Item 2";
+            cell.textLabel.text = @"Pickle Sandwich";
         } else if (indexPath.row == 2)
         {
-            cell.textLabel.text = @"Sample Menu Item 3";
+            cell.textLabel.text = @"Roast Beef Sandwich";
+            cell.imageView.image = [UIImage imageNamed:@"CheckMark"];
         } else if (indexPath.row == 3)
         {
-            cell.textLabel.text = @"Sample Menu Item 4";
+            cell.textLabel.text = @"Some Other Sandwich";
+            cell.imageView.image = [UIImage imageNamed:@"CheckMark"];
+        } else if (indexPath.row == 4)
+        {
+            cell.textLabel.text = @"Grilled Cheese";
         }
     } else if (indexPath.section == 2)
     {

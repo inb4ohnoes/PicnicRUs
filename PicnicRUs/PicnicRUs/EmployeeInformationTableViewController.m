@@ -64,10 +64,10 @@
             cell.textLabel.text = @"Customer: Jane Doe";
         } else if (indexPath.row == 1)
         {
-            cell.textLabel.text = @"Menu: Egg Salad Sandwich, Roast Beef Sandwich, Some Other Sandwich, etc...";
+            cell.textLabel.text = @"Menu: Egg Salad Sandwich, Roast Beef Sandwich, Some Other Sandwich.";
         } else if (indexPath.row == 2)
         {
-            cell.textLabel.text = @"Employees: John Smith, Sarah Smith, Jane Doe, John Doe";
+            cell.textLabel.text = @"Employees: John Smith, Sarah Smith, John Doe";
         }
     }
     
