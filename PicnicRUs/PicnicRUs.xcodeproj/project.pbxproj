@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC9FCE621E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE611E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m */; };
+		EC9FCE651E8DE2BD00EB5277 /* EmployeeListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE641E8DE2BD00EB5277 /* EmployeeListTableViewController.m */; };
+		EC9FCE681E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE671E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m */; };
+		EC9FCE6B1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */; };
+		EC9FCE6F1E8DF17B00EB5277 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE6E1E8DF17B00EB5277 /* InventoryTableViewController.m */; };
 		ECFC97671E710B1100BB75CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97661E710B1100BB75CE /* main.m */; };
 		ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97691E710B1100BB75CE /* AppDelegate.m */; };
 		ECFC976D1E710B1100BB75CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC976C1E710B1100BB75CE /* HomeViewController.m */; };
@@ -21,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC9FCE601E8DCD8F00EB5277 /* EmployeeManagementTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeManagementTableViewController.h; sourceTree = "<group>"; };
+		EC9FCE611E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeManagementTableViewController.m; sourceTree = "<group>"; };
+		EC9FCE631E8DE2BD00EB5277 /* EmployeeListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeListTableViewController.h; sourceTree = "<group>"; };
+		EC9FCE641E8DE2BD00EB5277 /* EmployeeListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeListTableViewController.m; sourceTree = "<group>"; };
+		EC9FCE661E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeePaymentHistoryTableViewController.h; sourceTree = "<group>"; };
+		EC9FCE671E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeePaymentHistoryTableViewController.m; sourceTree = "<group>"; };
+		EC9FCE691E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeePaymentsDetailsTableViewController.h; sourceTree = "<group>"; };
+		EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeePaymentsDetailsTableViewController.m; sourceTree = "<group>"; };
+		EC9FCE6D1E8DF17B00EB5277 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
+		EC9FCE6E1E8DF17B00EB5277 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
 		ECFC97621E710B1100BB75CE /* PicnicRUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicnicRUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC97661E710B1100BB75CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECFC97681E710B1100BB75CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC9FCE6C1E8DF16C00EB5277 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				EC9FCE6D1E8DF17B00EB5277 /* InventoryTableViewController.h */,
+				EC9FCE6E1E8DF17B00EB5277 /* InventoryTableViewController.m */,
+			);
+			name = Inventory;
+			sourceTree = "<group>";
+		};
 		ECFC97591E710B1000BB75CE = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +101,7 @@
 				ECFC977F1E71169A00BB75CE /* Welcome */,
 				ECFC97801E7116A200BB75CE /* Customer */,
 				ECFC978C1E712B5000BB75CE /* Employee */,
+				EC9FCE6C1E8DF16C00EB5277 /* Inventory */,
 				ECFC97711E710B1100BB75CE /* Assets.xcassets */,
 				ECFC97761E710B1100BB75CE /* Info.plist */,
 				ECFC97651E710B1100BB75CE /* Supporting Files */,
@@ -117,6 +142,14 @@
 		ECFC978C1E712B5000BB75CE /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				EC9FCE601E8DCD8F00EB5277 /* EmployeeManagementTableViewController.h */,
+				EC9FCE611E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m */,
+				EC9FCE631E8DE2BD00EB5277 /* EmployeeListTableViewController.h */,
+				EC9FCE641E8DE2BD00EB5277 /* EmployeeListTableViewController.m */,
+				EC9FCE661E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.h */,
+				EC9FCE671E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m */,
+				EC9FCE691E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.h */,
+				EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */,
 				ECFC978D1E712B7000BB75CE /* EmployeeInformationTableViewController.h */,
 				ECFC978E1E712B7000BB75CE /* EmployeeInformationTableViewController.m */,
 				ECFC97901E712E8600BB75CE /* EmployeeInformationHeaderView.h */,
@@ -200,11 +233,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFC976D1E710B1100BB75CE /* HomeViewController.m in Sources */,
+				EC9FCE681E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m in Sources */,
 				ECFC97991E7259D300BB75CE /* OrderSuccessViewController.m in Sources */,
+				EC9FCE651E8DE2BD00EB5277 /* EmployeeListTableViewController.m in Sources */,
 				ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */,
 				ECFC97921E712E8600BB75CE /* EmployeeInformationHeaderView.m in Sources */,
 				ECFC978B1E71258200BB75CE /* CustomerOrderRequestTableViewController.m in Sources */,
 				ECFC97671E710B1100BB75CE /* main.m in Sources */,
+				EC9FCE621E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m in Sources */,
+				EC9FCE6B1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m in Sources */,
+				EC9FCE6F1E8DF17B00EB5277 /* InventoryTableViewController.m in Sources */,
 				ECFC978F1E712B7000BB75CE /* EmployeeInformationTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

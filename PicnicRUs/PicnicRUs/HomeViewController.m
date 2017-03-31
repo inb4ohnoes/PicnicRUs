@@ -8,7 +8,8 @@
 
 #import "HomeViewController.h"
 #import "CustomerOrderRequestTableViewController.h"
-#import "EmployeeInformationTableViewController.h"
+#import "EmployeeManagementTableViewController.h"
+#import "InventoryTableViewController.h"
 
 @interface HomeViewController ()
 
@@ -31,6 +32,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIBarButtonItem *inventoryItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(checkInventory)];
+    self.navigationItem.rightBarButtonItem = inventoryItem;
 }
 
 
@@ -47,8 +51,14 @@
 
 - (IBAction)employeeButtonPressed:(id)sender
 {
-    EmployeeInformationTableViewController *controller = [[EmployeeInformationTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    EmployeeManagementTableViewController *controller = [[EmployeeManagementTableViewController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)checkInventory
+{
+    InventoryTableViewController *inventory = [[InventoryTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [self.navigationController pushViewController:inventory animated:YES];
 }
 
 @end
