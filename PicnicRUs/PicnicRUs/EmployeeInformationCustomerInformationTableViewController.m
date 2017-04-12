@@ -1,23 +1,23 @@
 //
-//  EmployeeInformationTableViewController.m
+//  EmployeeInformationAddEventTableViewController.m
 //  PicnicRUs
 //
-//  Created by Sophia Tung on 3/9/17.
+//  Created by Sophia Tung on 4/6/17.
 //  Copyright © 2017 Picnic R Us. All rights reserved.
 //
 
-#import "EmployeeInformationTableViewController.h"
-#import "EmployeeInformationHeaderView.h"
 #import "EmployeeInformationCustomerInformationTableViewController.h"
 
-@interface EmployeeInformationTableViewController ()
+@interface EmployeeInformationCustomerInformationTableViewController ()
 
 @end
 
-@implementation EmployeeInformationTableViewController
+@implementation EmployeeInformationCustomerInformationTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Information";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -25,11 +25,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"Today";
-    
-    EmployeeInformationHeaderView *header = [[EmployeeInformationHeaderView alloc] init];
-    [header setInfoWithFirstName:@"John" lastName:@"Doe" numberOfEventsWorkingToday:1];
-    self.tableView.tableHeaderView = header;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,50 +35,33 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    //each event is a section, so number of events
-    return 3;//self.events.count or something
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //customer name, menu, employees working the event as a list
     return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
     if (indexPath.row == 0)
     {
-        cell.textLabel.text = @"Customer: Jane Doe";
-        cell.accessoryType = UITableViewCellAccessoryDetailButton;
+        cell.textLabel.text = @"Name: Jane Doe";
     } else if (indexPath.row == 1)
     {
-        cell.textLabel.text = @"Menu: Egg Salad Sandwich, Roast Beef Sandwich, Some Other Sandwich.";
+        cell.textLabel.text = @"Phone: 666-696-4200";
     } else if (indexPath.row == 2)
     {
-        cell.textLabel.text = @"Employees: John Smith, Sarah Smith, John Doe";
+        cell.textLabel.text = @"E-mail: Jane@Albert.Tech";
     }
     
     return cell;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return [NSString stringWithFormat:@"Event %ld", (long)section + 1];
-}
-
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 0)
-    {
-        EmployeeInformationCustomerInformationTableViewController *customerInformation = [[EmployeeInformationCustomerInformationTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-        [self.navigationController pushViewController:customerInformation animated:YES];
-    }
 }
 
 /*

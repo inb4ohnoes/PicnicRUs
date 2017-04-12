@@ -37,7 +37,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -49,8 +49,11 @@
         return 5;//sample menu
     } else if (section == 2)
     {
-        return 4;//name cardno date ccv
+        return 3;
     } else if (section == 3)
+    {
+        return 4;//name cardno date ccv
+    } else if (section == 4)
     {
         return 1;
     }
@@ -109,6 +112,20 @@
         }
     } else if (indexPath.section == 2)
     {
+        if (indexPath.row == 0)
+        {
+            cell.textLabel.text = @"John Smith";
+            cell.imageView.image = [UIImage imageNamed:@"CheckMark"];
+        } else if (indexPath.row == 1)
+        {
+            cell.textLabel.text = @"Jane Smith";
+        } else if (indexPath.row == 2)
+        {
+            cell.textLabel.text = @"Jane Doe";
+            cell.imageView.image = [UIImage imageNamed:@"CheckMark"];
+        }
+    } else if (indexPath.section == 3)
+    {
         //payment information
         if (indexPath.row == 0)
         {
@@ -144,8 +161,11 @@
         return @"Menu Selection (prefilled)";
     } else if (section == 2)
     {
-        return @"Payment Details (prefilled)";
+        return @"Choose Staff (prefilled)";
     } else if (section == 3)
+    {
+        return @"Payment Details (prefilled)";
+    } else if (section == 4)
     {
         return @"That It!";
     }

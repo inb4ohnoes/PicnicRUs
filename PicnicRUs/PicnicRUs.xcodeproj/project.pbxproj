@@ -12,6 +12,7 @@
 		EC9FCE681E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE671E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m */; };
 		EC9FCE6B1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */; };
 		EC9FCE6F1E8DF17B00EB5277 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE6E1E8DF17B00EB5277 /* InventoryTableViewController.m */; };
+		ECC0E6421E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC0E6411E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.m */; };
 		ECFC97671E710B1100BB75CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97661E710B1100BB75CE /* main.m */; };
 		ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC97691E710B1100BB75CE /* AppDelegate.m */; };
 		ECFC976D1E710B1100BB75CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFC976C1E710B1100BB75CE /* HomeViewController.m */; };
@@ -36,6 +37,8 @@
 		EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeePaymentsDetailsTableViewController.m; sourceTree = "<group>"; };
 		EC9FCE6D1E8DF17B00EB5277 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
 		EC9FCE6E1E8DF17B00EB5277 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
+		ECC0E6401E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeInformationCustomerInformationTableViewController.h; sourceTree = "<group>"; };
+		ECC0E6411E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeInformationCustomerInformationTableViewController.m; sourceTree = "<group>"; };
 		ECFC97621E710B1100BB75CE /* PicnicRUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicnicRUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFC97661E710B1100BB75CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECFC97681E710B1100BB75CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				EC9FCE6A1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m */,
 				ECFC978D1E712B7000BB75CE /* EmployeeInformationTableViewController.h */,
 				ECFC978E1E712B7000BB75CE /* EmployeeInformationTableViewController.m */,
+				ECC0E6401E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.h */,
+				ECC0E6411E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.m */,
 				ECFC97901E712E8600BB75CE /* EmployeeInformationHeaderView.h */,
 				ECFC97911E712E8600BB75CE /* EmployeeInformationHeaderView.m */,
 				ECFC97931E712F1B00BB75CE /* EmployeeInformationHeaderView.xib */,
@@ -241,6 +246,7 @@
 				ECFC978B1E71258200BB75CE /* CustomerOrderRequestTableViewController.m in Sources */,
 				ECFC97671E710B1100BB75CE /* main.m in Sources */,
 				EC9FCE621E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m in Sources */,
+				ECC0E6421E96A239004B8CE7 /* EmployeeInformationCustomerInformationTableViewController.m in Sources */,
 				EC9FCE6B1E8DE8C500EB5277 /* EmployeePaymentsDetailsTableViewController.m in Sources */,
 				EC9FCE6F1E8DF17B00EB5277 /* InventoryTableViewController.m in Sources */,
 				ECFC978F1E712B7000BB75CE /* EmployeeInformationTableViewController.m in Sources */,
