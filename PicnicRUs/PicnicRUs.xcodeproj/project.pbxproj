@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC9D9DB81E9F073100C7A78C /* OrderQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9D9DB61E9F073100C7A78C /* OrderQuoteViewController.m */; };
+		EC9D9DB91E9F073100C7A78C /* OrderQuoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9D9DB71E9F073100C7A78C /* OrderQuoteViewController.xib */; };
 		EC9FCE621E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE611E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m */; };
 		EC9FCE651E8DE2BD00EB5277 /* EmployeeListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE641E8DE2BD00EB5277 /* EmployeeListTableViewController.m */; };
 		EC9FCE681E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FCE671E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC9D9DB51E9F073100C7A78C /* OrderQuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderQuoteViewController.h; sourceTree = "<group>"; };
+		EC9D9DB61E9F073100C7A78C /* OrderQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderQuoteViewController.m; sourceTree = "<group>"; };
+		EC9D9DB71E9F073100C7A78C /* OrderQuoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderQuoteViewController.xib; sourceTree = "<group>"; };
 		EC9FCE601E8DCD8F00EB5277 /* EmployeeManagementTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeManagementTableViewController.h; sourceTree = "<group>"; };
 		EC9FCE611E8DCD8F00EB5277 /* EmployeeManagementTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeManagementTableViewController.m; sourceTree = "<group>"; };
 		EC9FCE631E8DE2BD00EB5277 /* EmployeeListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeListTableViewController.h; sourceTree = "<group>"; };
@@ -135,6 +140,9 @@
 			children = (
 				ECFC97891E71258200BB75CE /* CustomerOrderRequestTableViewController.h */,
 				ECFC978A1E71258200BB75CE /* CustomerOrderRequestTableViewController.m */,
+				EC9D9DB51E9F073100C7A78C /* OrderQuoteViewController.h */,
+				EC9D9DB61E9F073100C7A78C /* OrderQuoteViewController.m */,
+				EC9D9DB71E9F073100C7A78C /* OrderQuoteViewController.xib */,
 				ECFC97961E7259D300BB75CE /* OrderSuccessViewController.h */,
 				ECFC97971E7259D300BB75CE /* OrderSuccessViewController.m */,
 				ECFC97981E7259D300BB75CE /* OrderSuccessViewController.xib */,
@@ -225,6 +233,7 @@
 			files = (
 				ECFC97721E710B1100BB75CE /* Assets.xcassets in Resources */,
 				ECFC977E1E7111EF00BB75CE /* HomeViewController.xib in Resources */,
+				EC9D9DB91E9F073100C7A78C /* OrderQuoteViewController.xib in Resources */,
 				ECFC97941E712F1B00BB75CE /* EmployeeInformationHeaderView.xib in Resources */,
 				ECFC979A1E7259D300BB75CE /* OrderSuccessViewController.xib in Resources */,
 			);
@@ -241,6 +250,7 @@
 				EC9FCE681E8DE65E00EB5277 /* EmployeePaymentHistoryTableViewController.m in Sources */,
 				ECFC97991E7259D300BB75CE /* OrderSuccessViewController.m in Sources */,
 				EC9FCE651E8DE2BD00EB5277 /* EmployeeListTableViewController.m in Sources */,
+				EC9D9DB81E9F073100C7A78C /* OrderQuoteViewController.m in Sources */,
 				ECFC976A1E710B1100BB75CE /* AppDelegate.m in Sources */,
 				ECFC97921E712E8600BB75CE /* EmployeeInformationHeaderView.m in Sources */,
 				ECFC978B1E71258200BB75CE /* CustomerOrderRequestTableViewController.m in Sources */,

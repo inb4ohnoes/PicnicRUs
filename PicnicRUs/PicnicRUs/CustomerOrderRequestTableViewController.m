@@ -8,6 +8,7 @@
 
 #import "CustomerOrderRequestTableViewController.h"
 #import "OrderSuccessViewController.h"
+#import "OrderQuoteViewController.h"
 
 @interface CustomerOrderRequestTableViewController ()
 
@@ -37,7 +38,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -55,7 +56,7 @@
         return 4;//name cardno date ccv
     } else if (section == 4)
     {
-        return 1;
+        return 1;//calculate quote
     }
     return 0;
 }
@@ -140,11 +141,12 @@
         {
             cell.textLabel.text = @"CCV";
         }
-    } else if (indexPath.section == 3)
+    } else if (indexPath.section == 4)
     {
         if (indexPath.row == 0)
         {
-            cell.textLabel.text = @"Complete Order >";
+            cell.textLabel.text = @"Calculate Quote";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }
     
@@ -167,9 +169,20 @@
         return @"Payment Details (prefilled)";
     } else if (section == 4)
     {
-        return @"That It!";
+        return @"Price";
     }
     return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 4 && indexPath.row == 0)
+    {
+        OrderQuoteViewController *quote = [[OrderQuoteViewController alloc] init];
+        [self.navigationController pushViewController:quote animated:YES];
+    }
 }
 
 /*
