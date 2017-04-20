@@ -11,9 +11,21 @@
 
 @interface EmployeeListTableViewController ()
 
+@property BOOL infoOptionEnabled;
+
 @end
 
 @implementation EmployeeListTableViewController
+
+- (instancetype)initWithInfoOptionEnabled:(BOOL)infoOptionEnabled
+{
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self)
+    {
+        self.infoOptionEnabled = infoOptionEnabled;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,9 +67,14 @@
         cell.textLabel.text = @"Jane Doe";
     }
     
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.accessoryType = self.infoOptionEnabled ? UITableViewCellAccessoryDetailDisclosureButton : UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return !self.infoOptionEnabled;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,6 +84,16 @@
         EmployeePaymentHistoryTableViewController *history = [[EmployeePaymentHistoryTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
         [self.navigationController pushViewController:history animated:YES];
     }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    UIAlertController *status = [UIAlertController alertControllerWithTitle:@"Status" message:@"John Smith: Available" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [status addAction:okAction];
+    
+    [self presentViewController:status animated:YES completion:nil];
 }
 
 /*

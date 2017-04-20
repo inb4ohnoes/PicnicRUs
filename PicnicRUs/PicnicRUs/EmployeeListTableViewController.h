@@ -10,4 +10,6 @@
 
 @interface EmployeeListTableViewController : UITableViewController
 
+- (instancetype)initWithInfoOptionEnabled:(BOOL)infoOptionEnabled;
+
 @end

@@ -51,7 +51,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -70,6 +70,9 @@
     } else if (indexPath.row == 1)
     {
         cell.textLabel.text = @"Employee Payment";
+    } else if (indexPath.row == 2)
+    {
+        cell.textLabel.text = @"General Manager Access";
     }
     
     return cell;
@@ -83,7 +86,11 @@
         [self.navigationController pushViewController:controller animated:YES];
     } else if (indexPath.row == 1)
     {
-        EmployeeListTableViewController *list = [[EmployeeListTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        EmployeeListTableViewController *list = [[EmployeeListTableViewController alloc] initWithInfoOptionEnabled:NO];
+        [self.navigationController pushViewController:list animated:YES];
+    } else if (indexPath.row == 2)
+    {
+        EmployeeListTableViewController *list = [[EmployeeListTableViewController alloc] initWithInfoOptionEnabled:YES];
         [self.navigationController pushViewController:list animated:YES];
     }
 }
