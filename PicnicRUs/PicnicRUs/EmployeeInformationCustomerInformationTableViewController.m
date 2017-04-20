@@ -35,11 +35,18 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    if (section == 0)
+    {
+        return 3;
+    } else if (section == 1)
+    {
+        return 1;
+    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,18 +57,53 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    if (indexPath.row == 0)
+    if (indexPath.section == 0)
     {
-        cell.textLabel.text = @"Name: Jane Doe";
-    } else if (indexPath.row == 1)
+        if (indexPath.row == 0)
+        {
+            cell.textLabel.text = @"Name: Jane Doe";
+        } else if (indexPath.row == 1)
+        {
+            cell.textLabel.text = @"Phone: 666-696-4200";
+        } else if (indexPath.row == 2)
+        {
+            cell.textLabel.text = @"E-mail: Jane@Albert.Tech";
+        }
+    } else if (indexPath.section == 1)
     {
-        cell.textLabel.text = @"Phone: 666-696-4200";
-    } else if (indexPath.row == 2)
-    {
-        cell.textLabel.text = @"E-mail: Jane@Albert.Tech";
+        if (indexPath.row == 0)
+        {
+            cell.textLabel.text = @"Send Customer Notification";
+        }
     }
     
+    
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1)
+    {
+        if (indexPath.row == 0)
+        {
+            UIAlertController *notificationSent = [UIAlertController alertControllerWithTitle:@"Notification Sent" message:@"Customer has been alerted of event." preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [notificationSent addAction:okAction];
+            
+            [self presentViewController:notificationSent animated:YES completion:nil];
+        }
+    }
 }
 
 /*
