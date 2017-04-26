@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -48,15 +48,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrderSuccessImage" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-n3-zqs">
+                    <rect key="frame" x="0.0" y="280" width="375" height="387"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Qb9-2B-QcQ" firstAttribute="top" secondItem="2W8-2d-lOj" secondAttribute="bottom" constant="51" id="59G-WV-DGI"/>
                 <constraint firstItem="2W8-2d-lOj" firstAttribute="top" secondItem="PTn-PV-ZMe" secondAttribute="bottom" constant="18" id="FSA-UH-pMB"/>
                 <constraint firstItem="PTn-PV-ZMe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="KPE-nf-Xif"/>
+                <constraint firstAttribute="trailing" secondItem="sj2-n3-zqs" secondAttribute="trailing" id="L0K-yJ-irc"/>
                 <constraint firstItem="Qb9-2B-QcQ" firstAttribute="width" secondItem="2W8-2d-lOj" secondAttribute="width" id="NG6-Ba-spi"/>
                 <constraint firstItem="2W8-2d-lOj" firstAttribute="width" secondItem="PTn-PV-ZMe" secondAttribute="width" id="cZh-lx-gXh"/>
+                <constraint firstItem="sj2-n3-zqs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cwb-m6-lzs"/>
                 <constraint firstItem="Qb9-2B-QcQ" firstAttribute="centerX" secondItem="2W8-2d-lOj" secondAttribute="centerX" id="dHL-Ye-Qax"/>
+                <constraint firstAttribute="bottom" secondItem="sj2-n3-zqs" secondAttribute="bottom" id="i2q-kW-iiQ"/>
+                <constraint firstItem="sj2-n3-zqs" firstAttribute="top" secondItem="Qb9-2B-QcQ" secondAttribute="bottom" constant="8" id="luc-Zp-TXm"/>
                 <constraint firstItem="2W8-2d-lOj" firstAttribute="leading" secondItem="PTn-PV-ZMe" secondAttribute="leading" id="ooh-fS-rfB"/>
                 <constraint firstItem="PTn-PV-ZMe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pfV-hm-oDi"/>
                 <constraint firstAttribute="trailing" secondItem="PTn-PV-ZMe" secondAttribute="trailing" constant="20" id="q0a-P5-hdk"/>
@@ -65,4 +72,7 @@
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="OrderSuccessImage" width="318" height="480"/>
+    </resources>
 </document>

@@ -88,7 +88,7 @@
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertController *status = [UIAlertController alertControllerWithTitle:@"Status" message:@"John Smith: Available" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *status = [UIAlertController alertControllerWithTitle:@"Employee Status" message:@"Available!" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
     [status addAction:okAction];
